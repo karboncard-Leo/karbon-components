@@ -3,8 +3,8 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   title: 'karbon-components',
   favicon:
-    'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  logo: 'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
+    'https://s3-ap-south-1.amazonaws.com:443/bot-bkt/prod/38944/38944-imageonline-co-transparentimage%20%281%29.jpg',
+  logo: 'https://s3-ap-south-1.amazonaws.com:443/bot-bkt/prod/38944/38944-imageonline-co-transparentimage%20%281%29.jpg',
   outputPath: 'docs-dist',
   alias: {
     src: '/src',
@@ -12,12 +12,9 @@ export default defineConfig({
     components: '/src/components',
   },
   menus: {
-    '/components': [
-      { title: 'PageContainer页面容器', path: '/components/page-container' },
-      { title: 'Button 按钮', path: '/components/button' },
-    ],
+    '/components': [{ title: 'PageContainer页面容器', path: '/components/page-container' }],
   },
-  styles: ['https://cdnjs.cloudflare.com/ajax/libs/antd/4.20.4/antd.min.css', './src/global.css'],
+  styles: ['https://cdnjs.cloudflare.com/ajax/libs/antd/4.20.4/antd.min.css', 'src/global.css'],
   mfsu: {
     development: {
       output: './.mfsu-dev',
