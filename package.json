@@ -26,6 +26,7 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "homepage": "https://karboncard-leo.github.io/karbon-components/",
   "dependencies": {
     "antd": "^4.9.4",
     "classnames": "^2.2.6",
