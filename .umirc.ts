@@ -17,7 +17,7 @@ export default defineConfig({
       { title: 'Button 按钮', path: '/components/button' },
     ],
   },
-  styles: ['https://cdnjs.cloudflare.com/ajax/libs/antd/4.20.4/antd.min.css', 'src/global.css'],
+  styles: ['https://cdnjs.cloudflare.com/ajax/libs/antd/4.20.4/antd.min.css', './src/global.css'],
   mfsu: {
     development: {
       output: './.mfsu-dev',
@@ -34,6 +34,7 @@ export default defineConfig({
     },
   },
   base: '/karbon-components/',
+  publicPath: '/karbon-components/',
   mode: 'site',
   // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
   // more config: https://d.umijs.org/config
