@@ -5,9 +5,16 @@
     "moduleResolution": "node",
     "jsx": "react",
     "esModuleInterop": true,
-    "types": ["src"],
+    "types": ["jest"],
     "strict": true,
     "skipLibCheck": true,
-    "declaration": true
-  }
+    "declaration": true,
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"],
+      "utils/*": ["src/utils/*"],
+      "components/*": ["src/components/*"]
+    }
+  },
+  "exclude": ["dist", "node_modules"]
 }
