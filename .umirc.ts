@@ -15,11 +15,6 @@ export default defineConfig({
     '/components': [{ title: 'PageContainer页面容器', path: '/components/page-container' }],
   },
   styles: ['https://cdnjs.cloudflare.com/ajax/libs/antd/4.20.4/antd.min.css', 'src/global.css'],
-  mfsu: {
-    development: {
-      output: './.mfsu-dev',
-    },
-  },
   apiParser: {
     propFilter: {
       // 是否忽略从 node_modules 继承的属性，默认值为 false
@@ -33,6 +28,7 @@ export default defineConfig({
   base: '/karbon-components/',
   publicPath: '/karbon-components/',
   mode: 'site',
+  exportStatic: {},
   // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
   // more config: https://d.umijs.org/config
 });
