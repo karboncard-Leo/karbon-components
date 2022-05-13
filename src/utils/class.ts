@@ -1,3 +1,3 @@
 export function getClassPrefix() {
-  return 'karbon_';
+  return 'karbon';
 }

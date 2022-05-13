@@ -1,6 +1,4 @@
-## pageContainer
-
-页面容器
+## 基本使用
 
 ```tsx
 import React from 'react';
@@ -22,6 +20,10 @@ export default () => (
       </Button>,
       <Button key="2">按钮2</Button>,
     ]}
-  />
+  >
+    我是内容
+  </PageContainer>
 );
 ```
+
+<API src='./PageContainer.tsx'>
