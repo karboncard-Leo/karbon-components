@@ -8,5 +8,9 @@ export const menus = {
       title: 'ApplyCardModal申请卡弹窗',
       path: '/components/apply-card-modal',
     },
+    {
+      title: 'downLoadWays方式',
+      path: '/components/download-ways',
+    },
   ],
 };
