@@ -1,12 +1,12 @@
-import React from 'react';
 import { IframeDownLoad } from './IframeDownLoad';
 import { FileRequestDownLoad } from './RequestDownLoad';
-import { IframeType } from './IframeDownLoad/index';
+import { IframeType } from './IframeDownLoad';
+import { FileRequestType } from './RequestDownLoad';
 
 const UseDownLoad = () => {
-  const IframeDownLoadWay = () => IframeDownLoad({ url: 'www.baidu.com' });
+  const IframeDownLoadWay = (obj: IframeType) => IframeDownLoad(obj);
 
-  const FileRequestDownLoadWay = () => FileRequestDownLoad('url', 'arrayBuffer');
+  const FileRequestDownLoadWay = (obj: FileRequestType) => FileRequestDownLoad(obj);
 
   return {
     IframeDownLoadWay,

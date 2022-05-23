@@ -11,14 +11,25 @@ export default () => {
   const { IframeDownLoadWay, FileRequestDownLoadWay } = downloadWays();
 
   return (
-    <Button
-      type="primary"
-      onClick={() => {
-        IframeDownLoadWay();
-      }}
-    >
-      download
-    </Button>
+    <>
+      <Button
+        type="primary"
+        onClick={() => {
+          IframeDownLoadWay({ url: 'xxx' });
+        }}
+      >
+        download
+      </Button>
+
+      <Button
+        type="primary"
+        onClick={() => {
+          FileRequestDownLoadWay({ url: 'xxx' });
+        }}
+      >
+        download2
+      </Button>
+    </>
   );
 };
 ```

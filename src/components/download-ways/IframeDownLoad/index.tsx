@@ -1,10 +1,10 @@
 export type IframeType = {
-  url?: string;
+  url: string;
   jwtFlag?: boolean;
   queryString?: string;
   tokenName?: string;
 };
-
+// const queryString = Qs.stringify(query, { arrayFormat: 'brackets' })
 export const IframeDownLoad = ({
   url = '',
   jwtFlag = false,
