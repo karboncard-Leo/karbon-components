@@ -12,10 +12,11 @@ export default defineConfig({
     components: '/src/components',
   },
   navs: [
-    {
-      title: 'Components',
-      path: '/components',
-    },
+    null,
+    // {
+    //   title: 'Components',
+    //   path: '/components',
+    // },
     {
       title: 'GitHub',
       path: 'https://github.com/karboncard-Leo/karbon-components',
