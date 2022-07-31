@@ -4,27 +4,33 @@
 
 ```tsx
 import React from 'react';
-import { IframeType } from './IframeDownLoad/index';
 import { Button } from 'antd';
-import downloadWays from './index';
-export default () => {
-  const { IframeDownLoadWay, FileRequestDownLoadWay } = downloadWays();
+import UseDownLoadWays from './RequestDownLoad/index';
 
+export default () => {
+  const onprocess = (v1: number, v2: number) => {
+    console.log(v1, v2);
+  };
+
+  const onsuccess = () => {
+    console.log(123);
+  };
   return (
     <>
       <Button
         type="primary"
         onClick={() => {
-          IframeDownLoadWay({ url: 'xxx' });
+          UseDownLoadWays().IframeDownLoadWay({ url: 'wwww' });
         }}
       >
         download
       </Button>
 
       <Button
+        disabled
         type="primary"
         onClick={() => {
-          FileRequestDownLoadWay({ url: 'xxx' });
+          UseDownLoadWays().FileDownPercent({ url: 'www', onprocess, onsuccess });
         }}
       >
         download2
@@ -33,3 +39,7 @@ export default () => {
   );
 };
 ```
+
+## API
+
+[参考 Antd-Modal.method](<https://ant.design/components/modal-cn/#Modal.method()>)
